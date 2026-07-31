@@ -1,0 +1,53 @@
+---
+format: gfm
+---
+
+# ZEV Interventions, TRAP Mixture Reduction and Environmental Justice
+
+This folder includes **reproducible R code** for the **Transportation Emission Interventions and Environmental Justice Impacts on Traffic-related Air Pollution Mixtures Reductions: Evidence from Toronto, Canada** Manuscript Analysis and Visualization.
+
+**Authors:** Juwel Rana, Hong Chen, Marianne Hatzopoulou, Jad Zalzal, Jay S. Kaufman, Tarik Benmarhnia
+
+Raw microdata, census extracts, and large derived datasets are **not** included.
+
+## Related work
+
+- Public analysis builds on standard R packages such as `sf`, `data.table`, and `qgcomp`.
+
+## Repository layout
+
+| Path | Purpose |
+|------|---------|
+| `scripts/` | Main analysis pipelines (add sanitized `.R` files here) |
+| `data/README.md` | How to obtain restricted inputs locally |
+| `CITATION.cff` | Software and manuscript citation metadata |
+
+## Data availability and privacy
+
+Census, exposure, and health-linked inputs are **not** included here. Use local paths or environment variables for:
+
+- DA-level exposure and shapefiles  
+- Census / ON-Marg summaries  
+- Any health survey extracts (e.g. DA-linked summaries)
+
+- Neighborhood-level Census 2016 data can be obtained from the Canadian Census Analyzer at the University of Toronto, Canada (https://dc1.chass.utoronto.ca/census/index.html). TRAP exposure data are available upon request to the original authors.
+
+See `.gitignore` for excluded file types.
+
+## Requirements
+
+- R (>= 4.2 recommended)
+- Key packages: `sf`, `data.table`, `ggplot2`, `qgcomp`, and others as noted in scripts
+
+## Acknowledgments
+This study was funded by Health Canada under the Air Quality Program of the Government of Canada.
+
+## Citation
+
+**APA**
+
+> Rana, J., Chen, H., Hatzopoulou, M., Zalzal, J., Kaufman, J. S., & Benmarhnia, T. (2026) *Transportation emission interventions and environmental justice impacts on traffic-related air pollution mixtures reductions: Evidence from Toronto, Canada* [Under Review].
+
+## Contact
+
+Juwel Rana — juwelrana@saistbd.org
